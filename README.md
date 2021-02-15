@@ -1,0 +1,3 @@
+This project checks the 5-day weather forecast every morning and sends an alert email if there is snow in the forecast. As the owner of multiple self storage properties in the northeast, it's important for us to be alerted when it's going to snow so we can confirm our plow.
+
+The project calls the OpenWeatherMap API. It cleans the response and searches it for snow in the forecast. If there's no snow in the forecast, it logs "No snow" and does not send an email. If there is forecasted snow, it loads the data into a Pandas DataFrame, then converts it to a pretty HTML table and uses the EZgmail package to send the forecast to my email.
