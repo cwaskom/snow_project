@@ -18,7 +18,7 @@ def run():
 
     # Checks if snow in the forecast. If not, don't send an email
     if df.empty:
-        return "No snow"
+        print("No snow")
     else: 
         # Convert DataFrame to pretty html table
         output = build_table(df, 'blue_light')
